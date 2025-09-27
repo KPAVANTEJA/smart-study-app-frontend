@@ -1,0 +1,317 @@
+/* -------------------- COLORS -------------------- */
+:root {
+  --bg: #f4f7fa;
+  --card: #fff;
+  --text: #222;
+  --accent: #1e37f5;
+  --good: #27ae60;
+  --warn: #f39c12;
+  --bad: #e74c3c;
+}
+
+/* -------------------- BASE -------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  display: flex;
+  height: 115px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, var(--accent), #290ccf);
+  color: #fff;
+}
+
+header .tagline {
+  opacity: 0.9;
+  margin: 4px 0 0 0;
+  font-size: 0.95rem;
+}
+
+.header-controls button {
+  margin-left: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* -------------------- MAIN LAYOUT -------------------- */
+main {
+  display: grid;
+  grid-template-columns: 260px 1fr 300px;
+  gap: 18px;
+  padding: 18px;
+  max-width: 1200px;
+  margin: 18px auto;
+}
+
+.pane {
+  height: 100%;
+}
+
+.card {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(21, 32, 60, 0.07);
+}
+
+.left-pane .card {
+  margin-bottom: 12px;
+}
+
+/* -------------------- FORM ELEMENTS -------------------- */
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select,
+input[type="number"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  flex: 1;
+}
+
+#taskInput {
+  width: 100%;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.muted {
+  background: #eee;
+  color: #333;
+}
+
+.small {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* -------------------- TIMER -------------------- */
+.timer-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 6px 0;
+}
+
+.timer-display #timerClock {
+  font-family: monospace;
+  font-size: 1.4rem;
+}
+
+/* -------------------- TASK LIST -------------------- */
+#tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 6px solid var(--accent);
+  background: #f8fbff;
+}
+
+.task-item.completed {
+  background: #e9f7ef;
+  border-left-color: var(--good);
+  color: #666;
+  text-decoration: line-through;
+}
+
+.task-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-title {
+  font-weight: 600;
+}
+
+.task-sub {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.task-actions button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.task-actions .done {
+  background: var(--good);
+}
+
+.task-actions .del {
+  background: var(--bad);
+}
+
+/* -------------------- PROGRESS -------------------- */
+.progress-bar {
+  height: 18px;
+  background: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+  margin-right: 10px;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--good), #2ecc71);
+}
+
+/* -------------------- CHARTS -------------------- */
+.charts {
+  margin-top: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+canvas {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+/* -------------------- MINI CALENDAR -------------------- */
+#miniCalendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.mini-day {
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #f0f3ff;
+}
+
+.mini-day.has {
+  border-color: var(--accent);
+  box-shadow: 0 6px 12px rgba(74, 144, 226, 0.06);
+}
+
+/* -------------------- TIMELINE -------------------- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline .titem {
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+  border-left: 4px solid var(--accent);
+}
+
+/* -------------------- RIGHT COLUMN -------------------- */
+.tips {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  text-align: center;
+  padding: 12px 0;
+  color: #666;
+  margin-top: 12px;
+}
+
+/* -------------------- BADGES -------------------- */
+.badges #badgesWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  border: 1px dashed #e6eefc;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+  .left-pane,
+  .right-pane {
+    order: 2;
+  }
+  .center-pane {
+    order: 1;
+  }
+}
+
+/* -------------------- DARK MODE -------------------- */
+body.dark {
+  --bg: #000000;
+  --card: #1d2059;
+  --text: #a19e9e;
+  --accent: #0642f8;
+  --good: #13df3f;
+  --warn: #f5870a;
+  --bad: #f60606;
+}
+
+body.dark header {
+  background: linear-gradient(135deg, #0c0f1a, #1a1c2b);
+}
+body.dark footer{
+  color: white;
+}
+body.dark .small{
+  color: white;
+}

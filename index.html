@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Study Planner</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>Smart Study Planner</h1>
+      <p class="tagline">Plan smart | Study focused | Win prizes</p>
+    </div>
+    <div class="header-controls">
+      <button id="darkModeToggle">🌙</button>
+      <button id="notifyPermissionBtn">Notify</button>
+    </div>
+  </header>
+
+  <main>
+    <aside class="pane left-pane">
+      <section class="card">
+        <h3>Add Task</h3>
+        <input id="taskInput" placeholder="Task title (e.g. Algebra HW)" />
+        <div class="row">
+          <select id="subjectSelect">
+            <option value="General">General</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="History">History</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <select id="prioritySelect">
+            <option value="Low">Low</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <input type="date" id="taskDate" />
+        <div class="row">
+          <input type="time" id="taskTime"/>
+          <button id="voiceBtn" title="Add by voice">🎙️</button>
+        </div>
+        <div class="row">
+          <button id="addTaskBtn">Add Task</button>
+          <button id="resetBtn" class="muted">Reset</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Pomodoro Timer</h3>
+        <div class="timer-display">
+          <span id="timerLabel">Work</span>
+          <span id="timerClock">25:00</span>
+        </div>
+        <div class="row">
+          <input type="number" id="workMin" min="1" value="25" /> <small>work</small>
+          <input type="number" id="breakMin" min="1" value="5" /> <small>break</small>
+        </div>
+        <div class="row">
+          <button id="startTimerBtn">▶ Start</button>
+          <button id="stopTimerBtn" class="muted">■ Stop</button>
+          <button id="resetTimerBtn" class="muted">↺ Reset</button>
+        </div>
+        <p class="small">Use Pomodoro to boost productivity. Timer gives a notification when session ends.</p>
+      </section>
+
+      <section class="card">
+        <h3>Export / Import</h3>
+        <div class="row">
+          <button id="exportBtn">⬇ Export JSON</button>
+          <input type="file" id="importFile" accept="application/json" />
+        </div>
+        <p class="small">Backup your tasks or move them between devices.</p>
+      </section>
+
+      <section class="card badges">
+        <h3>Achievements</h3>
+        <div id="badgesWrap"></div>
+        <p class="small">Earn badges: streaks, tasks completed, priority completion, etc.</p>
+      </section>
+    </aside>
+
+    <section class="pane center-pane">
+      <div class="controls card">
+        <div class="row">
+          <input id="searchInput" placeholder="Search tasks..." />
+          <select id="filterSubject">
+            <option value="All">All Subjects</option>
+            <option>General</option><option>Math</option><option>Science</option><option>English</option><option>History</option><option>Other</option>
+          </select>
+          <select id="filterPriority">
+            <option value="All">All Priorities</option>
+            <option>Low</option><option>Medium</option><option>High</option>
+          </select>
+          <select id="filterStatus">
+            <option value="All">All</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+      </div>
+
+      <article class="card">
+        <h3>Tasks</h3>
+        <ul id="tasks"></ul>
+      </article>
+
+      <article class="card">
+        <h3>Progress & Charts</h3>
+        <div class="row">
+          <div class="progress-bar">
+            <div id="progressFill"></div>
+          </div>
+          <div id="progressText">0% completed</div>
+        </div>
+        <div class="charts row">
+          <canvas id="chartSubjects" width="300" height="200"></canvas>
+          <canvas id="chartStatus" width="300" height="200"></canvas>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Streak & XP</h3>
+        <p id="streakText">Streak: 0 days 🔥</p>
+        <p id="xpText">XP: 0 — Level 1</p>
+      </article>
+    </section>
+
+    <aside class="pane right-pane">
+      <section class="card">
+        <h3>Mini Calendar</h3>
+        <div id="miniCalendar"></div>
+      </section>
+
+      <section class="card">
+        <h3>Upcoming Deadlines</h3>
+        <div id="timelineList" class="timeline"></div>
+      </section>
+
+      <section class="card">
+        <h3>Quick Tips</h3>
+        <ul class="tips">
+          <li>Use Pomodoro: 25/5 mins.</li>
+          <li>Mark High priority tasks first.</li>
+          <li>Keep tasks small & actionable.</li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    <small>Made with ❤️ by Pavan © 2025. Works offline on refresh.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
