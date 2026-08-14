@@ -145,3 +145,87 @@ The application uses:
 
 ---
 
+## 🏗️ System Development Approach
+
+The project is divided into several functional modules.
+
+### 1. 🎨 UI/UX Design
+
+A clean and responsive dashboard was designed to make study planning simple and intuitive.
+
+The interface focuses on:
+
+* Easy navigation
+* Clear task hierarchy
+* Visual progress indicators
+* Responsive layouts
+* Accessible color contrast
+* Minimal distractions
+
+### 2. 📝 Task Management Module
+
+This module handles the complete lifecycle of study tasks.
+
+Users can:
+
+1. Create a task
+2. Set a deadline
+3. Assign a priority
+4. Estimate required study time
+5. Edit task information
+6. Delete tasks
+7. Mark tasks as completed
+
+### 3. 📊 Visualization Module
+
+The visualization system transforms task data into useful insights.
+
+It includes:
+
+* Overall progress bar
+* Completion statistics
+* Progress charts
+* Upcoming task timeline
+* Calendar-based task visualization
+
+### 4. ⏱️ Reminder & Productivity Module
+
+The productivity module combines deadlines with a Pomodoro timer to encourage focused study sessions.
+
+The Pomodoro workflow follows:
+
+```text
+Start Focus Session
+        ↓
+   Study for 25 min
+        ↓
+    Take a Break
+        ↓
+   Study Again
+        ↓
+  Track Productivity
+```
+
+### 5. 💾 Local Storage Module
+
+All important application data is stored using the browser's LocalStorage API.
+
+Example data flow:
+
+```text
+User Input
+    ↓
+JavaScript
+    ↓
+Task Object
+    ↓
+LocalStorage
+    ↓
+Application State
+    ↓
+UI Rendering
+```
+
+This allows users to close and reopen the application without losing their locally stored tasks.
+
+---
