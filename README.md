@@ -118,3 +118,30 @@ The Smart Study Planner brings multiple productivity tools together in one dashb
 │                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology                  | Purpose                                            |
+| --------------------------- | -------------------------------------------------- |
+| **HTML5**                   | Application structure and semantic markup          |
+| **CSS3**                    | Styling, responsive layout, themes, and animations |
+| **JavaScript (Vanilla JS)** | Application logic and interactivity                |
+| **LocalStorage API**        | Persistent client-side data storage                |
+| **Chart.js**                | Progress visualization and analytics               |
+
+### Design Approach
+
+The application uses:
+
+* CSS Custom Properties
+* Responsive CSS Grid
+* Flexbox
+* Mobile-first principles
+* Reusable UI components
+* Light/Dark theme variables
+* Modern card-based dashboard design
+
+---
+
