@@ -229,3 +229,48 @@ UI Rendering
 This allows users to close and reopen the application without losing their locally stored tasks.
 
 ---
+
+## ⚙️ Task Management Algorithm
+
+The main task workflow follows these steps:
+
+```text
+1. User enters task details
+        ↓
+2. Validate task information
+        ↓
+3. Create task object
+        ↓
+4. Save task to LocalStorage
+        ↓
+5. Render task in the dashboard
+        ↓
+6. Display task on timeline/calendar
+        ↓
+7. User completes task
+        ↓
+8. Update completion status
+        ↓
+9. Recalculate progress
+        ↓
+10. Update charts and statistics
+        ↓
+11. Check achievement milestones
+        ↓
+12. Refresh dashboard
+```
+
+### Task Data Structure
+
+A task can be represented conceptually as:
+
+```javascript
+{
+  id: 1,
+  title: "Complete Mathematics Assignment",
+  deadline: "2026-08-15",
+  priority: "High",
+  estimatedTime: 60,
+  completed: false
+}
+```
