@@ -15,9 +15,9 @@ With features such as **task management, deadlines, reminders, a Pomodoro timer,
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-## ✨ Features
+## Features
 
-### 📝 Task Management
+### Task Management
 
 * Add new study tasks with:
 
@@ -30,70 +30,68 @@ With features such as **task management, deadlines, reminders, a Pomodoro timer,
 * Mark tasks as completed
 * Automatically update progress when tasks are completed
 
-### 📅 Smart Calendar
+### Smart Calendar
 
 * Mini calendar for quick date navigation
 * Highlight days containing scheduled tasks
 * Easily identify upcoming deadlines
 * Connect calendar dates with study tasks
 
-### 📊 Progress Dashboard
+### Progress Dashboard
 
 * Visual progress bar showing overall completion
 * Progress statistics for completed and pending tasks
 * Interactive charts powered by **Chart.js**
 * Track productivity and study performance over time
 
-### ⏱️ Pomodoro Timer
+### Pomodoro Timer
 
 * Built-in Pomodoro timer for focused study sessions
 * Helps divide study time into manageable intervals
 * Encourages focused work and regular breaks
 * Designed to improve productivity and reduce distractions
 
-### 🏆 Achievement & Badge System
+### Achievement & Badge System
 
 * Earn badges for reaching productivity milestones
 * Provides motivation through visible achievements
 * Automatically refreshes as study goals are completed
 
-### 🗓️ Study Timeline
+### Study Timeline
 
 * Visual timeline of upcoming tasks
 * Quickly identify approaching deadlines
 * Prioritize important study sessions
 
-### 🔔 Reminders
+### Reminders
 
 * Helps students stay aware of upcoming deadlines
 * Displays important tasks directly within the planner
 
-### 🌓 Light & Dark Mode
+### Light & Dark Mode
 
 * Toggle between light and dark themes
 * Comfortable interface for both daytime and nighttime study
 * Theme preference can be preserved locally
 
-### 📱 Responsive Design
+### Responsive Design
 
 * Works across:
 
-  * 💻 Desktop
-  * 💻 Laptop
-  * 📱 Mobile
-  * 📲 Tablet
+  * Desktop
+  * Laptop
+  * Mobile
+  * Tablet
 * Uses a responsive grid-based layout for a consistent experience across screen sizes
 
-### 💾 Local Data Storage
+### Local Data Storage
 
 * Uses browser **LocalStorage** to save tasks and preferences
 * No sign-up required
 * No external database required
 * User data remains stored directly in the browser
 
----
-
-## 🖥️ Application Overview
+## Application Overview
 
 The Smart Study Planner brings multiple productivity tools together in one dashboard:
 
@@ -119,9 +117,7 @@ The Smart Study Planner brings multiple productivity tools together in one dashb
 └─────────────────────────────────────────────────────────┘
 ```
 
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology                  | Purpose                                            |
 | --------------------------- | -------------------------------------------------- |
@@ -143,13 +139,11 @@ The application uses:
 * Light/Dark theme variables
 * Modern card-based dashboard design
 
----
-
-## 🏗️ System Development Approach
+## System Development Approach
 
 The project is divided into several functional modules.
 
-### 1. 🎨 UI/UX Design
+### 1. UI/UX Design
 
 A clean and responsive dashboard was designed to make study planning simple and intuitive.
 
@@ -162,7 +156,7 @@ The interface focuses on:
 * Accessible color contrast
 * Minimal distractions
 
-### 2. 📝 Task Management Module
+### 2. Task Management Module
 
 This module handles the complete lifecycle of study tasks.
 
@@ -176,7 +170,7 @@ Users can:
 6. Delete tasks
 7. Mark tasks as completed
 
-### 3. 📊 Visualization Module
+### 3. Visualization Module
 
 The visualization system transforms task data into useful insights.
 
@@ -188,7 +182,7 @@ It includes:
 * Upcoming task timeline
 * Calendar-based task visualization
 
-### 4. ⏱️ Reminder & Productivity Module
+### 4. Reminder & Productivity Module
 
 The productivity module combines deadlines with a Pomodoro timer to encourage focused study sessions.
 
@@ -206,7 +200,7 @@ Start Focus Session
   Track Productivity
 ```
 
-### 5. 💾 Local Storage Module
+### 5. Local Storage Module
 
 All important application data is stored using the browser's LocalStorage API.
 
@@ -228,9 +222,7 @@ UI Rendering
 
 This allows users to close and reopen the application without losing their locally stored tasks.
 
----
-
-## ⚙️ Task Management Algorithm
+## Task Management Algorithm
 
 The main task workflow follows these steps:
 
@@ -275,9 +267,7 @@ A task can be represented conceptually as:
 }
 ```
 
----
-
-## 📈 Progress Calculation
+## Progress Calculation
 
 The overall completion percentage can be calculated using:
 
@@ -302,27 +292,23 @@ Progress = (7 / 10) × 100
 
 The dashboard automatically updates the progress indicator whenever a task is completed or modified.
 
----
-
-## 🏆 Badge System
+## Badge System
 
 The badge system rewards users for reaching study milestones.
 
 Example milestones:
 
-| Achievement        | Example Requirement                           |
-| ------------------ | --------------------------------------------- |
-| 🌱 Getting Started | Complete your first task                      |
-| ⭐ Productive       | Complete 5 tasks                              |
-| 🔥 Consistent      | Complete tasks across multiple study sessions |
-| 🚀 High Achiever   | Complete 25 tasks                             |
-| 🏆 Study Master    | Reach a major completion milestone            |
+| Achievement     | Example Requirement                           |
+| ----------------| --------------------------------------------- |
+| Getting Started | Complete your first task                      |
+| Productive      | Complete 5 tasks                              |
+| Consistent      | Complete tasks across multiple study sessions |
+| High Achiever   | Complete 25 tasks                             |
+| Study Master    | Reach a major completion milestone            |
 
 The badge system is designed to provide additional motivation and encourage consistent study habits.
 
----
-
-## 📂 Suggested Project Structure
+## Suggested Project Structure
 
 ```text
 smart-study-planner/
@@ -343,9 +329,7 @@ smart-study-planner/
 └── LICENSE
 ```
 
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -381,9 +365,7 @@ in your browser.
 
 For the best development experience, you can also use the **Live Server** extension in VS Code.
 
----
-
-## 🔐 Data & Privacy
+## Data & Privacy
 
 Smart Study Planner is designed with a **local-first approach**.
 
@@ -394,9 +376,7 @@ Smart Study Planner is designed with a **local-first approach**.
 
 > **Note:** Clearing the browser's site data may permanently remove locally stored tasks.
 
----
-
-## 🎯 Project Objectives
+## Project Objectives
 
 The primary objectives of Smart Study Planner are to:
 
@@ -408,4 +388,19 @@ The primary objectives of Smart Study Planner are to:
 * Encourage focused study through Pomodoro sessions
 * Make productivity tracking simple and accessible
 
----
+## Future Enhancements
+
+Possible future improvements include:
+
+* Browser push notifications
+* Email reminders
+* Cloud synchronization
+* User authentication
+* Progressive Web App (PWA) support
+* Export/import study data
+* AI-powered study recommendations
+* Subject-wise progress tracking
+* Custom study goals
+* Advanced productivity analytics
+* Cross-device synchronization
+* Optional focus sounds
