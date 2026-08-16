@@ -274,3 +274,50 @@ A task can be represented conceptually as:
   completed: false
 }
 ```
+
+---
+
+## 📈 Progress Calculation
+
+The overall completion percentage can be calculated using:
+
+```text
+Progress (%) =
+(Completed Tasks / Total Tasks) × 100
+```
+
+### Example
+
+If a student has:
+
+* 10 total tasks
+* 7 completed tasks
+
+Then:
+
+```text
+Progress = (7 / 10) × 100
+         = 70%
+```
+
+The dashboard automatically updates the progress indicator whenever a task is completed or modified.
+
+---
+
+## 🏆 Badge System
+
+The badge system rewards users for reaching study milestones.
+
+Example milestones:
+
+| Achievement        | Example Requirement                           |
+| ------------------ | --------------------------------------------- |
+| 🌱 Getting Started | Complete your first task                      |
+| ⭐ Productive       | Complete 5 tasks                              |
+| 🔥 Consistent      | Complete tasks across multiple study sessions |
+| 🚀 High Achiever   | Complete 25 tasks                             |
+| 🏆 Study Master    | Reach a major completion milestone            |
+
+The badge system is designed to provide additional motivation and encourage consistent study habits.
+
+---
