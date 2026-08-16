@@ -382,3 +382,30 @@ in your browser.
 For the best development experience, you can also use the **Live Server** extension in VS Code.
 
 ---
+
+## 🔐 Data & Privacy
+
+Smart Study Planner is designed with a **local-first approach**.
+
+* No account is required
+* No external database is used
+* Study tasks are stored in browser LocalStorage
+* No backend server is required for core functionality
+
+> **Note:** Clearing the browser's site data may permanently remove locally stored tasks.
+
+---
+
+## 🎯 Project Objectives
+
+The primary objectives of Smart Study Planner are to:
+
+* Help students organize academic tasks
+* Improve time management
+* Encourage consistent study habits
+* Reduce missed deadlines
+* Provide visual feedback on progress
+* Encourage focused study through Pomodoro sessions
+* Make productivity tracking simple and accessible
+
+---
