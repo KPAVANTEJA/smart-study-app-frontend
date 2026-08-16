@@ -321,3 +321,64 @@ Example milestones:
 The badge system is designed to provide additional motivation and encourage consistent study habits.
 
 ---
+
+## 📂 Suggested Project Structure
+
+```text
+smart-study-planner/
+│
+├── index.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── assets/
+│   ├── icons/
+│   └── images/
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+No backend server or database is required.
+
+You only need:
+
+* A modern web browser
+* A code editor such as VS Code
+* Git (optional)
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/smart-study-planner.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd smart-study-planner
+```
+
+### 3. Run the Application
+
+Simply open:
+
+```text
+index.html
+```
+
+in your browser.
+
+For the best development experience, you can also use the **Live Server** extension in VS Code.
+
+---
