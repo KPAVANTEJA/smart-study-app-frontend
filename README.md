@@ -404,3 +404,39 @@ Possible future improvements include:
 * Advanced productivity analytics
 * Cross-device synchronization
 * Optional focus sounds
+
+## Why Smart Study Planner?
+
+Many productivity applications focus either on task management or time tracking. Smart Study Planner combines several study-focused tools into one lightweight application.
+
+Instead of switching between multiple applications, students can:
+
+```text
+Plan
+  ↓
+Organize
+  ↓
+Focus
+  ↓
+Complete
+  ↓
+Track
+  ↓
+Improve
+```
+
+This creates a simple and continuous study workflow.
+
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.jpeg)
+
+### Task Management
+![Task Management](screenshots/task-management.jpeg)
+
+### Pomodoro Timer
+![Pomodoro Timer](screenshots/pomodoro-timer.jpeg)
+
+### Progress Analytics
+![Progress Analytics](screenshots/progress-analytics.jpeg)
