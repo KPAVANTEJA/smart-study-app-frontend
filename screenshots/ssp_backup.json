@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "id": 1787380209262,
+      "name": "Add Future Enhancements",
+      "date": "2026-08-24",
+      "time": "23:59",
+      "subject": "General",
+      "priority": "High",
+      "completed": false,
+      "created": "2026-08-22T06:30:08.808Z"
+    },
+    {
+      "id": 1787380521442,
+      "name": "Communication",
+      "date": "2026-08-22",
+      "time": "",
+      "subject": "English",
+      "priority": "Medium",
+      "completed": true,
+      "created": "2026-08-22T06:35:20.876Z"
+    }
+  ],
+  "meta": {
+    "xp": 10,
+    "streak": 1,
+    "lastCompleted": "2026-08-22",
+    "badges": [
+      "starter"
+    ]
+  }
+}
