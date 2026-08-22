@@ -440,3 +440,57 @@ This creates a simple and continuous study workflow.
 
 ### Progress Analytics
 ![Progress Analytics](screenshots/progress-analytics.jpeg)
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+If you'd like to improve Smart Study Planner:
+
+1. Fork the repository
+2. Create a new branch
+
+```bash
+git checkout -b feature/your-feature
+```
+
+3. Make your changes
+4. Commit your changes
+
+```bash
+git commit -m "Add: your feature"
+```
+
+5. Push the branch
+
+```bash
+git push origin feature/your-feature
+```
+
+6. Open a Pull Request
+
+## Project Backup
+
+A backup of the project data is included in this repository.
+
+[Project Backup JSON](backup/ssp-backup.json)
+
+## License
+
+This project is available under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for more information.
+
+## Author
+
+**Pavan K**
+
+Built with ❤️ using **HTML, CSS, and Vanilla JavaScript**.
+
+## Support the Project
+
+If you find **Smart Study Planner** useful, consider giving the repository a ⭐ on GitHub.
+
+Every star helps the project grow and motivates further development!
+
+> **Smart Study Planner — Turn your study goals into consistent progress.**
